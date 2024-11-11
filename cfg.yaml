@@ -1,0 +1,95 @@
+db: db.sqlite
+
+events:
+  start: 
+    text: "Добро пожаловать в ресторан!"
+    tts: "Добро пожаловать в ресторан!"
+  hello:
+    text: "Привет! Чем могу помочь?"
+    tts: "Привет! Чем могу помочь?"
+  error:
+    text: "Я не понял, что ты сказал"
+    tts: "Я не понял, что ты сказал"
+  menu:
+    text: "Меню состоит из:"
+    tts: "Меню состоит из:"
+  addDish:
+    text: "Добавлено блюдо"
+    tts: "Добавлено блюдо"
+  deleteDish:
+    text: "Удалено блюдо"
+    tts: "Удалено блюдо"
+  addOrder:
+    text: "Блюдо добавлено в заказ"
+    tts: "Блюдо добавлено в заказ"
+  deleteOrder:
+    text: "Блюдо удалено из заказа"
+    tts: "Блюдо удалено из заказа"
+  showOrder:
+    text: "Ваш заказ:"
+    tts: "Ваш заказ:"
+  clearOrder:
+    text: "Заказ очищен"
+    tts: "Заказ очищен"
+
+
+triggers:
+  SimpleUtterance:
+    hello: 
+      commands: ["привет", "здравствуй", "приветствую","хай"]
+      original_utterances: ["Привет", "Здравствуй", "Приветствую","Хай"] # Сам запрос
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "hello"
+    addDish:
+      commands: ["добавить в меню", "добавить блюдо в меню"]
+      original_utterances: ["Добавить в меню", "Добавить блюдо в меню"]
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "addDish"
+    menu:
+      commands: ["показать меню"]
+      original_utterances: ["Показать меню"]
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "menu"
+    deleteDish:
+      commands: ["удалить из меню", "удалить блюдо из меню"]
+      original_utterances: ["Удалить из меню", "Удалить блюдо из меню"]
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "deleteDish"
+    addOrder:
+      commands: ["добавить в заказ", "добавить блюдо в заказ"]
+      original_utterances: ["Добавить в заказ"]
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "addOrder"
+    deleteOrder:
+      commands: ["удалить блюдо из заказа", "удалить из заказа"]
+      original_utterances: ["Удалить блюдо из заказа", "Удалить из заказа"]
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "deleteOrder"
+    showOrder:
+      commands: ["показать заказ"]
+      original_utterances: ["Показать заказ"]
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "showOrder"
+    clearOrder:
+      commands: ["очистить заказ"]
+      original_utterances: ["Очистить заказ"]
+      markup: {}
+      payload: {}
+      nlu: {}
+      name: "clearOrder"
+
+  
