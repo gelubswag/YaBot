@@ -1,0 +1,12 @@
+blinker==1.9.0
+click==8.1.7
+colorama==0.4.6
+Flask==3.0.3
+flask-tunnel==0.1.5
+itsdangerous==2.2.0
+Jinja2==3.1.4
+MarkupSafe==3.0.2
+pyaml==24.9.0
+pyngrok==7.2.1
+PyYAML==6.0.2
+Werkzeug==3.1.3
